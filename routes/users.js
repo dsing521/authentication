@@ -9,6 +9,8 @@ var MongoClient = require('mongodb').MongoClient
 var SessionStore=null;
 /* GET users listing. */
 
+// var "mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/?retryWrites=true&w=majority" = "mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/?retryWrites=true&w=majority";
+
 router.get('/login', function (req, res, next) {
   try {
     loginStatus=req.cookies['username'];
@@ -48,7 +50,7 @@ router.post('/createcontact', function (req, res, next)
 
     }
   
-  MongoClient.connect("mongodb://localhost:27017/damandeepdb?readPreference=primary&appname=MongoDB+Compass&directConnection=true&ssl=false", function(err, db) 
+  MongoClient.connect("mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/?retryWrites=true&w=majority", function(err, db) 
   {
     if (err) throw err;
     var dbo = db.db("damandeepdb");
@@ -77,7 +79,7 @@ router.post('/login', function (req, res, next)
     var usernameInput= req.body.username
 		var passwordInput = req.body.password;
 
-    MongoClient.connect("mongodb://localhost:27017/damandeepdb?readPreference=primary&appname=MongoDB+Compass&directConnection=true&ssl=false", function(err, db) {
+    MongoClient.connect("mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/?retryWrites=true&w=majority", function(err, db) {
       if (err) throw err;
       var dbo = db.db("damandeepdb");
       dbo.collection("usercollections").findOne({
@@ -123,7 +125,7 @@ router.post('/login', function (req, res, next)
     }
 
     var resultall;
-    MongoClient.connect("mongodb://localhost:27017/damandeepdb?readPreference=primary&appname=MongoDB+Compass&directConnection=true&ssl=false", function(err, db) {
+    MongoClient.connect("mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/?retryWrites=true&w=majority", function(err, db) {
       if (err) throw err;
       var dbo = db.db("damandeepdb");
       //Sort the result by name:
@@ -147,7 +149,7 @@ router.post('/login', function (req, res, next)
 
      } catch (err) { }
     
-    MongoClient.connect("mongodb://localhost:27017/damandeepdb?readPreference=primary&appname=MongoDB+Compass&directConnection=true&ssl=false", function(err, db) 
+    MongoClient.connect("mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/?retryWrites=true&w=majority", function(err, db) 
     {
       if (err) throw err;
       var dbo = db.db("damandeepdb");
@@ -175,7 +177,7 @@ router.post('/login', function (req, res, next)
 
      } catch (err) { }
     
-    MongoClient.connect("mongodb://localhost:27017/damandeepdb?readPreference=primary&appname=MongoDB+Compass&directConnection=true&ssl=false", function(err, db) 
+    MongoClient.connect("mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/?retryWrites=true&w=majority", function(err, db) 
     {
       if (err) throw err;
       var dbo = db.db("damandeepdb");
@@ -202,7 +204,7 @@ router.post('/login', function (req, res, next)
      } catch (err) {  
     }
     
-    MongoClient.connect("mongodb://localhost:27017/damandeepdb?readPreference=primary&appname=MongoDB+Compass&directConnection=true&ssl=false", function(err, db) {
+    MongoClient.connect("mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/?retryWrites=true&w=majority", function(err, db) {
       if (err) throw err;
       var dbo = db.db("damandeepdb");
    

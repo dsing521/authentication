@@ -52,7 +52,7 @@ app.use(function(err, req, res, next) {
 
 
 
-mongoose.connect("mongodb://localhost:27017/damandeepdb?readPreference=primary&appname=MongoDB+Compass&directConnection=true&ssl=false", {
+mongoose.connect("mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/damandeepdb?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })

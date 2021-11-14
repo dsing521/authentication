@@ -27,7 +27,7 @@ const userrSchema = new mongoose.Schema({
     });
 var userCollection = mongoose.model("userCollections", userrSchema);
 
-const AccountOne = new userCollection({ username: 'damandeep007',password:'ddd111',emailaddress:'damandeepsingh@gmail.com' });
+const AccountOne = new userCollection({ username: 'damandeep007',password:'ddd111',emailaddress:'dsing521@my.centennialcollege.ca' });
 AccountOne.save(function (err) {
   
 });
