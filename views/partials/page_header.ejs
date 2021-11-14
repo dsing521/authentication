@@ -1,0 +1,50 @@
+<nav id="sidebar">
+    <div class="p-4 pt-5">
+      <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(/images/logo.jpg);"></a>
+<ul class="list-unstyled components mb-5">
+  <li class="<%- active1 %>">
+    <a href="/" data-toggle="collapse" aria-expanded="false">Home</a>
+    
+  </li>
+  <li class="<%- active2 %>"> 
+      <a href="/aboutus">Aboutus</a>
+  </li>
+  <li class="<%- active3 %>">
+    <a href="/contactus">Contactus</a>
+</li>
+<li class="<%- active4 %>">
+    <a href="/projects">Testing Projects</a>
+</li>
+<li class="<%- active5 %>">
+    <a href="/services">Services</a>
+</li>
+<li class="<%- active6 %>">
+    <a href="/resumecv">Curriculum Vitae</a>
+</li>
+
+<% if (loginStatus == "" ) { %>
+
+  <li class="<%- active7 %>">
+    <a href="/users/login">Dashboard Login</a>
+  </li>
+  
+  <% } else { %>
+
+    <li class="<%- active7 %>">
+      <a href="/users/contactListview">Business Contact List</a>
+    </li>
+
+    <li>
+      <a href="/users/logout">Logout</a>
+    </li>
+
+  <% } %>
+
+
+ 
+</ul>
+
+<%- include('page_footer'); %>
+
+</div>
+</nav>

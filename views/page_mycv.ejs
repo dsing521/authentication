@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Favicons -->
+    <link href="/images/favicon/favicon.png" rel="icon">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- icofont -->
+    <link href="/icofont/icofont.min.css" rel="stylesheet">
+
+    <!-- Twitter Bootstrap CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Template Main CSS File -->
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <!--
+            Student’s Name - Damandeep Singh, 
+            StudentID - 301170650, 
+            Date  03 October, 2021-->
+    <title>
+        <%- title %> -Damandeep Singh</title>
+    </head>
+
+    <body>
+        <div class="wrapper d-flex align-items-stretch">
+            <%- include('partials/page_header'); %>
+
+            <div id="content" class="p-4 p-md-5">
+                <div class="row">
+                    <div class="col-lg-9"> <h3>My Curriculum Vitae:</h3></div>
+                    <div class="col-lg-3"> <a href="/cvpdf/damandeepSinghCV.pdf" download><button type="button" style="margin-bottom: 5px;" class="btn btn-danger"> Download Resume</button>
+                    </a> </div>
+                </div>
+                <hr> 
+            <embed src="/cvpdf/damandeepSinghCV.pdf" width="100%" height="90%" />
+            </div>
+
+        </div>
+    
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
+         
