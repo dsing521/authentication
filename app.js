@@ -59,10 +59,10 @@ mongoose.connect("mongodb+srv://dsing521:abcdefgh@cluster0.hs816.mongodb.net/dam
 .then(() => console.log("MongoDB connected"))
 .catch(err => console.log());
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => 
-{
-    console.log('Server running at http://127.0.0.1:5000');
-});
+// const PORT = process.env.PORT || 5000;
+// app.listen(PORT, () => 
+// {
+//     console.log('Server running at http://127.0.0.1:5000');
+// });
 
 module.exports = app;
